@@ -26,6 +26,14 @@ function GalleryItem({ gallery, gettingPics }) {
         console.log(err);
       });
   }
+  function deletePost(event) {
+    axios
+      .delete(`/shopping/${event.currentTarget.id}`)
+      .then(() => {
+        getShoppingList();
+        alert("Item deleted!");
+      });
+  }
   return (
     <>  
       {picStatus ? (
@@ -48,6 +56,8 @@ function GalleryItem({ gallery, gettingPics }) {
           </div>
           <div>
             <button onClick={() => addLikes(gallery.id)}> Like </button>
+            <button id={gallery.id} onClick={deletePost}>Delete</button>
+
           </div>
         </>
       )}
