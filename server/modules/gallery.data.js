@@ -1,6 +1,7 @@
 const galleryItems = [
-    { id: 1, path: 'images/goat_small.jpg', description: 'Photo of a goat taken at Glacier National Park.', likes: 0 },
-    { id: 2, path: 'images/Somalia_Beach.jpeg', description: 'Beautiful Coast of Somalia Beach.', likes: 1000 },
+    { id: 1, path: 'images/Quran.jpeg', description: 'My faith is very important to me.', likes: 1000 },
+    { id: 2, path: 'images/Food.webp', description: 'Food is the way to the Heart.', likes: 100 },
+    { id: 3, path: 'images/Traveling.jpeg', description: "Traveling is a must", likes: 500}
    
 ];
 
